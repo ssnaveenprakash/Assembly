@@ -14,7 +14,7 @@
 * t = ten bytes (80-bit floating point).
 
 ## Instruction Syntax
-**Opcode/Mnemonic Source Destination**  
+**Opcode/Mnemonic** -  **Source**  **Destination**  
 **Opcode/Mnemonic** - Operation code like ```mov,add,sub```  
 **Source** - Immediate / Register   
 **Destination** - Register   
