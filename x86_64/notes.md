@@ -5,8 +5,8 @@
 
 ### Operating Modes:
 
-These determine the assumed/default size of instruction operands,
-and restricts which opcodes are available, and how they are used.
+These determine the assumed/default size of instruction operands
+and restrict which opcodes are available, and how they are used.
 
 Modern operating systems, booted inside `Real` mode,
 must escalate first to `Protected` mode, and then `Long` mode,
@@ -20,7 +20,19 @@ Mode|Default Operand Size|Default Address Size|Description
 [`Protected`](https://en.wikipedia.org/wiki/Protected_mode) | `32`-bit | `32`-bit | Legacy. Introduced segment registers (protected virtual addresses).
 [`Real`](https://en.wikipedia.org/wiki/Real_mode) | `16`-bit | `16`-bit | Legacy. Unlimited direct access to addressable memory. Compatible with oldest x86 CPUs.
 
-There are also modes called [`Virtual 8086`](https://en.wikipedia.org/wiki/Virtual_8086_mode) and [`Long Compatbility`](https://en.wikipedia.org/wiki/IAMD64#Operating_modes) which are middle steps that emulate the previous mode. They are meant for backward-compatibility and are provide fast context-switching for multi-tasking. (ie. So you can run 32-bit applications in a 64-bit operating system.)
+There are also modes called [`Virtual 8086`](https://en.wikipedia.org/wiki/Virtual_8086_mode) and [`Long Compatbility`](https://en.wikipedia.org/wiki/IAMD64#Operating_modes) which are middle steps that emulate the previous mode. They are meant for backward compatibility and are provide fast context-switching for multi-tasking. (ie. So you can run 32-bit applications in a 64-bit operating system.)
+
+### Registers
+Register|Name|Commonly
+-|-|-
+`A`|**Accumulator**|Return value, especially the sum of arithmetic operations.
+`B`|**Base index**|Starting point of an array or list structure.
+`C`|**Counter**|Used by loops ie. the `i` in `for(int i=0; i<9; i++)`
+`D`|**Data**|Extended space for accumulator.<br>(ie. `32`-bit mode will combine `EAX+EDX` to work on `64`-bit values)
+`BP`|**Base Pointer**|Pointer to address of current stack frame.<br>(where function parameters end, and local variables begin)
+`SP`|**Stack Pointer**|Pointer to address of last bytes `PUSH`ed to memory.
+`SI`|**Source Index**|Starting point of unbounded stream data, especially a string.
+`DI`|**Destination Index**|Ending point of unbounded data, especially in slicing operations.
 
 ### Instruction Encoding and Decoding
  0-4 bytes   | 1-3 bytes   | 0-1 byte      | 0-1 byte                 | 0,1,2,4 bytes     | 0,1,2,4,8 bytes |
