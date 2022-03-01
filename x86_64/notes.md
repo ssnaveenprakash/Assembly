@@ -47,9 +47,6 @@ Register|Name|Commonly
   - [base] + [index × scale] + disp32
 * **Implied Addressing** - some instructions will assume the operand without explicitly mentioning them in the instruction, _inc and dec_ will assume to add one or decrease by one
 
-### Calling Conventions
-* calling convention specifies registers which should be preserved by caller and callee.
-* It also specifies which registers should be used for passing parameters and return values.
 
 ## GAS Assembly
 
@@ -75,13 +72,19 @@ Register|Name|Commonly
 **Source** - Immediate / Register   
 **Destination** - Register   
 
-
 ### Prefixes
 * When referencing a register, the register needs to be prefixed with a "%".
 * Constant numbers need to be prefixed with a "$".
 
+### Calling Conventions
+* calling convention specifies registers which should be preserved by caller and callee.
+* It also specifies which registers should be used for passing parameters and return values.
 
+* **Callee saved registers** - RBX, RSP, RBP, R12, R13 , R14 , R15
 
+* **Arguments passing** RDI, RSI, RDX, RCX, R8, R9 
+
+* **Return Value** Integer return values up to 64 bits in size are stored in **RAX** while values up to 128 bit are stored in **RAX** and **RDX**. Floating-point return values are similarly stored in **XMM0** and **XMM1**.
 
 
 
