@@ -56,7 +56,10 @@ Real	16-bit	16-bit	Legacy. Unlimited direct access to addressable memory. Compat
 * **Implied Addressing** - some instructions will assume the operand without explicitly mentioning them in the instruction, _inc and dec_ will assume to add one or decrease by one 
 
 
-
+## Instruction Encoding and Decoding
+ 0-4 bytes   | 1-3 bytes   | 0-1 byte      | 0-1 byte                 | 0,1,2,4 bytes     | 0,1,2,4,8 bytes |
+-------------|-------------|---------------|--------------------------|-------------------|-----------------|
+ `Prefix`    | `Opcode`    | `Mod-Reg R/M` | `Scale-Index-Base (SIB)` | `Displacement`    | `Immediate`     |
 
 
 
