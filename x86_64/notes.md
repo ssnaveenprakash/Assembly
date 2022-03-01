@@ -3,6 +3,25 @@
 
 ## CPU Architecture
 
+### Operating Modes:
+
+These determine the assumed/default size of instruction operands,
+and restricts which opcodes are available, and how they are used.
+
+Modern operating systems, booted inside `Real` mode,
+must escalate first to `Protected` mode, and then `Long` mode,
+as support and capability is detected. This is done to remain backward-compatible.
+
+This means modern applications run exclusively in `Long` 64-bit mode.
+
+Mode|Default Operand Size|Default Address Size|Description
+-|-|-|-
+[`Long`](https://en.wikipedia.org/wiki/Long_mode) | `32`-bit | `64`-bit | Latest.
+[`Protected`](https://en.wikipedia.org/wiki/Protected_mode) | `32`-bit | `32`-bit | Legacy. Introduced segment registers (protected virtual addresses).
+[`Real`](https://en.wikipedia.org/wiki/Real_mode) | `16`-bit | `16`-bit | Legacy. Unlimited direct access to addressable memory. Compatible with oldest x86 CPUs.
+
+There are also modes called [`Virtual 8086`](https://en.wikipedia.org/wiki/Virtual_8086_mode) and [`Long Compatbility`](https://en.wikipedia.org/wiki/IAMD64#Operating_modes) which are middle steps that emulate the previous mode. They are meant for backward-compatibility and are provide fast context-switching for multi-tasking. (ie. So you can run 32-bit applications in a 64-bit operating system.)
+
 ### Instruction Encoding and Decoding
  0-4 bytes   | 1-3 bytes   | 0-1 byte      | 0-1 byte                 | 0,1,2,4 bytes     | 0,1,2,4,8 bytes |
 -------------|-------------|---------------|--------------------------|-------------------|-----------------|
