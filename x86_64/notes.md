@@ -76,6 +76,10 @@ Register|Name|Commonly
 **Destination** - Register   
 
 
+### Prefixes
+* When referencing a register, the register needs to be prefixed with a "%".
+* Constant numbers need to be prefixed with a "$".
+
 
 
 
