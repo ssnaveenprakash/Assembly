@@ -47,6 +47,9 @@ Register|Name|Commonly
   - [base] + [index × scale] + disp32
 * **Implied Addressing** - some instructions will assume the operand without explicitly mentioning them in the instruction, _inc and dec_ will assume to add one or decrease by one
 
+### Calling Conventions
+* calling convention specifies registers which should be preserved by caller and callee.
+* It also specifies which registers should be used for passing parameters and return values.
 
 ## GAS Assembly
 
