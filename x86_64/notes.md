@@ -16,7 +16,7 @@
 ## Instruction Syntax
 
 | Mnemonic  | Source | Destination |   
-| ------------- | ------------- |   
+| ------------- | ------------- | ----------- |
 
 **Opcode/Mnemonic** - Operation code like ```mov,add,sub```  
 **Source** - Immediate / Register   
