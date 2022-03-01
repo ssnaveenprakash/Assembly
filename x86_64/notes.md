@@ -23,9 +23,11 @@
 **Destination** - Register   
 
 
+## Processor Operating Modes
+
 
 ## Addressing Modes
-* **Immediate Addressing** - we hard code a value in the instruction itself
+* **Immediate Addressing** - we hard code a value in the instruction itself either as an immediate value or as a displacement in SIB mode
 * **Register Addressing** - accessing contents of a register, it's very straightforward 
 * **Register Indirect Addressing** - effective address of the data is stored in a register and then the data is accessed by dereferencing the effective address  
 * **Scale, Index, Base, Displacement Addressing** - we can use a combination of scale , index, base, and displacement to compute an address and then fetch data from that address
