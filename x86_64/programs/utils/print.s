@@ -1,5 +1,6 @@
 .global print
 print:
+	# saving callee saving registers
 	pushq %rbp
 	pushq %rbx
 	pushq %r12
@@ -11,6 +12,7 @@ print:
         movq $1 , %rax
 	syscall
 
+	# restoring callee saving registers
 	movq %rbp,%rsp
 	popq %r12
 	popq %rbx
