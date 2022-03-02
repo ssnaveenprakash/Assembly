@@ -6,8 +6,7 @@ print:
 	pushq %r12
 	movq %rsp,%rbp
 
-	movq %rbx , %rdx
-	movq %r12 , %rsi
+	movq %rdi , %rdx
         movq $1 , %rdi
         movq $1 , %rax
 	syscall

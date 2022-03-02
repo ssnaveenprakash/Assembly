@@ -20,18 +20,18 @@ _start:
 	movq %rax , factorial_count
 
 	# calling factorial function
-	movq $13 , %rbx
-	movq $.factorial_is, %r12
+	movq $13 , %rdi
+	movq $.factorial_is, %rsi
 	call print
 
 	# calling factorial function
-	movq $1 , %rbx
-	movq $factorial_count, %r12
+	movq $1 , %rdi
+	movq $factorial_count, %rsi
 	call print
 
 	# calling factorial function
-	movq $1 , %rbx
-	movq $.new_line, %r12
+	movq $1 , %rdi
+	movq $.new_line, %rsi
 	call print
 
 	call exit
