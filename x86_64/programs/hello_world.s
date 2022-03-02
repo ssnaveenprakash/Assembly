@@ -1,7 +1,4 @@
 .global _start
-.global exit
-.global print 
-.global factorial
 
 .data
 .factorial_is: .ascii "Factorial is "
