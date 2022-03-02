@@ -4,7 +4,8 @@
 .global factorial
 
 .data
-.hello_world: .ascii "Hello\0\n"
+.factorial_is: .ascii "Factorial is "
+.new_line: .ascii "\n"
 
 .bss
 .lcomm factorial_count, 8
@@ -16,15 +17,26 @@ _start:
 	xorq %rdi, %rdi
 	movq $3 , %rdi
 	call factorial
+
+	# converting number to string
 	addq $48, %rax 
-        movq $1, %rbx
 	movq %rax , factorial_count
 
-	movq $1 , %rdx
-	movq $factorial_count , %rsi
-        movq $1 , %rdi
-        movq $1 , %rax
-	syscall
+	# calling factorial function
+	movq $13 , %rbx
+	movq $.factorial_is, %r12
+	call print
+
+	# calling factorial function
+	movq $1 , %rbx
+	movq $factorial_count, %r12
+	call print
+
+	# calling factorial function
+	movq $1 , %rbx
+	movq $.new_line, %r12
+	call print
+
 	call exit
 
 
