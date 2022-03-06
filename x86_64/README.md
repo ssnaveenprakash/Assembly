@@ -59,7 +59,7 @@ Operands for a CPU instruction can be in a **Register**,**Memory** or **Immediat
 * **CISC** - Complex Instruction Set Computation
 * **RISC** - Reduced Instruction Set Computation
 
-### CPU and Memory Architecture
+### CPU Memory Architecture
 * **Load Store** - For an instruction , both of the operands must be in the register. We use separate instruction for loading the data from memory to register and register to memory to save the computation
 * **Register Memory** - For an instruction , one operand can be in memory and other operand can be in register 
 
