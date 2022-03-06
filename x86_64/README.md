@@ -51,6 +51,14 @@ Register|Name|Commonly
 * **Little Endian** - LSB is stored at lowest address  
 * **Big Endian** - MSB is stored at lowest address 
 
+### CPU Architecture
+* **CISC** - Complex Instruction Set Computation
+* **RISC** - Reduced Instruction Set Computation
+
+### CPU and Memory Architecture
+* **Load Store** - For an instruction , both of the operands must be in the register. We use separate instruction for loading the data from memory to register and register to memory to save the computation
+* **Register Memory** - For an instruction , one operand can be in memory and other operand can be in register 
+
 ### One's complement , Signed , Unsigned
 * We cannot represent negative numbers using '-' sign infront of a number as we do it in paper. so we have to instruct the computer that a number is negative or positive.
 * So we represent negative numbers using One's complement notation 
