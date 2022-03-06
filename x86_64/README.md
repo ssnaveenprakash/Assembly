@@ -23,6 +23,7 @@ Mode|Default Operand Size|Default Address Size|Description
 There are also modes called [`Virtual 8086`](https://en.wikipedia.org/wiki/Virtual_8086_mode) and [`Long Compatbility`](https://en.wikipedia.org/wiki/IAMD64#Operating_modes) which are middle steps that emulate the previous mode. They are meant for backward compatibility and are provide fast context-switching for multi-tasking. (ie. So you can run 32-bit applications in a 64-bit operating system.)
 
 ### Registers
+![image](image.png)
 Register|Name|Commonly
 -|-|-
 `A`|**Accumulator**|Return value, especially the sum of arithmetic operations.
@@ -114,8 +115,3 @@ Register|Name|Commonly
 * how **unions** are converted to assembly
 * how **logical operators** are converted to assembly
 * how **post/pre increment/decrement** operators are converted to assembly
-
-  
-
-
-
