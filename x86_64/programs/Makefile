@@ -22,3 +22,6 @@ clean:
 run: hello_world.out
 	clear
 	./hello_world.out
+	make clean
+
+

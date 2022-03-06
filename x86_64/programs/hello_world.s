@@ -17,7 +17,7 @@ _start:
 
 	# converting number to string
 	addq $48, %rax 
-	movq %rax , factorial_count
+	movq %rax , factorial_count(%rip)
 
 	# to print "Factorial is"
 	movq $13 , %rdi
