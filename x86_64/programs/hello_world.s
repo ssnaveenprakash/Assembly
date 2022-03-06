@@ -19,17 +19,17 @@ _start:
 	addq $48, %rax 
 	movq %rax , factorial_count
 
-	# calling factorial function
+	# to print "Factorial is"
 	movq $13 , %rdi
 	movq $.factorial_is, %rsi
 	call print
 
-	# calling factorial function
+	# to print the factorial result
 	movq $1 , %rdi
 	movq $factorial_count, %rsi
 	call print
 
-	# calling factorial function
+	# to print the new line   
 	movq $1 , %rdi
 	movq $.new_line, %rsi
 	call print

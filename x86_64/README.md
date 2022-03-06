@@ -86,5 +86,9 @@ Register|Name|Commonly
 
 * **Return Value** Integer return values up to 64 bits in size are stored in **RAX** while values up to 128 bit are stored in **RAX** and **RDX**. Floating-point return values are similarly stored in **XMM0** and **XMM1**.
 
+### Endianess    
+* **Little Endian** - LSB is stored at lowest address  
+* **Big Endian** - MSB is stored at lowest address 
+
 
 
