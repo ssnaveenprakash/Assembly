@@ -89,7 +89,7 @@ Register|Name|Commonly
 
 * **Return Value** Integer return values up to 64 bits in size are stored in **RAX** while values up to 128 bit are stored in **RAX** and **RDX**. Floating-point return values are similarly stored in **XMM0** and **XMM1**.
 
-### Things to understand
+## Things to understand
 * how **conditional statements** are converted to assembly
 * how **loops are converted** to assembly
 * how **structures** are converted to assembly  
