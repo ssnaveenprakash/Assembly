@@ -41,6 +41,7 @@ Register|Name|Commonly
  `Prefix`    | `Opcode`    | `Mod-Reg R/M` | `Scale-Index-Base (SIB)` | `Displacement`    | `Immediate`     |
 
 ### Addressing Modes
+Operands for a CPU instruction can be in a **Register**,**Memory** or **Immediate** (hardcoded in the insruction itself)
 * **Immediate Addressing** - we hard code a value in the instruction itself either as an immediate value or as a displacement in SIB mode
 * **Register Addressing** - accessing contents of a register, it's very straightforward 
 * **Register Indirect Addressing** - effective address of the data is stored in a register and then the data is accessed by dereferencing the effective address  
@@ -50,7 +51,9 @@ Register|Name|Commonly
 
 ### Endianess
 * **Little Endian** - LSB is stored at lowest address  
-* **Big Endian** - MSB is stored at lowest address 
+* **Big Endian** - MSB is stored at lowest address
+
+![image](image_2.png)
 
 ### CPU Architecture
 * **CISC** - Complex Instruction Set Computation
