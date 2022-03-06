@@ -96,5 +96,10 @@ Register|Name|Commonly
 * how **pointers** are converted to assembly
 * how **arrays** are converted to assembly
 * how **unions** are converted to assembly
+* how **logical operators** are converted to assembly
+* how **post/pre increment/decrement** operators are converted to assembly
+
+  
+
 
 
