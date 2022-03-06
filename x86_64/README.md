@@ -47,6 +47,9 @@ Register|Name|Commonly
   - [base] + [index × scale] + disp32
 * **Implied Addressing** - some instructions will assume the operand without explicitly mentioning them in the instruction, _inc and dec_ will assume to add one or decrease by one
 
+### Endianess
+* **Little Endian** - LSB is stored at lowest address  
+* **Big Endian** - MSB is stored at lowest address 
 
 ## GAS Assembly
 
@@ -86,9 +89,6 @@ Register|Name|Commonly
 
 * **Return Value** Integer return values up to 64 bits in size are stored in **RAX** while values up to 128 bit are stored in **RAX** and **RDX**. Floating-point return values are similarly stored in **XMM0** and **XMM1**.
 
-### Endianess    
-* **Little Endian** - LSB is stored at lowest address  
-* **Big Endian** - MSB is stored at lowest address 
 
 
 
