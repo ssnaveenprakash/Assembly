@@ -61,7 +61,14 @@ Register|Name|Commonly
 
 ### One's complement , Signed , Unsigned
 * We cannot represent negative numbers using '-' sign infront of a number as we do it in paper. so we have to instruct the computer that a number is negative or positive.
-* So we represent negative numbers using One's complement notation 
+* So we represent negative numbers using One's complement notation
+
+### Instruction Set
+* Data Movement Instructions
+* Arithmetic Instructions
+* Control Instructions
+* Conversion Instructions - resize the data ( shrink or stretch ) 
+* Logical Instructions
 
 ## GAS Assembly
 
