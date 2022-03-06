@@ -2,6 +2,7 @@
 #include"assembly_functions.h"
 
 int main() {
-	assembly_print();
+	long sum = add(3,2,3,4); 
+	printf("%ld",sum);
 	return 0;
 }

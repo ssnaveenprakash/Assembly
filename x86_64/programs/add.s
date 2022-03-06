@@ -4,10 +4,28 @@
 add:
 	pushq %rbp
 	movq %rsp,%rbp
-	movq %edi,%rsc
-	cmpq $1,%edi
+	xor $0,%rax
+
+	cmpq $1,%rdi
 	jl exit
+	addq %rsi,%rax 
 	
+	cmpq $2,%rdi
+	jl exit
+	addq %rdx,%rax 
+
+	cmpq $3,%rdi
+	jl exit
+	addq %rcx,%rax 
+
+	cmpq $4,%rdi
+	jl exit
+	addq %r8,%rax 
+
+	cmpq $5,%rdi
+	jl exit
+	addq %r9,%rax
+
 	exit:
 	movq %rbp,%rsp
 	pop %rbp
