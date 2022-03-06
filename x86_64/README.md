@@ -82,11 +82,8 @@ Register|Name|Commonly
 ### Calling Conventions
 * calling convention specifies registers which should be preserved by caller and callee.
 * It also specifies which registers should be used for passing parameters and return values.
-
 * **Callee saved registers** - RBX, RSP, RBP, R12, R13 , R14 , R15
-
 * **Arguments passing** RDI, RSI, RDX, RCX, R8, R9 
-
 * **Return Value** Integer return values up to 64 bits in size are stored in **RAX** while values up to 128 bit are stored in **RAX** and **RDX**. Floating-point return values are similarly stored in **XMM0** and **XMM1**.
 
 ## Things to understand
