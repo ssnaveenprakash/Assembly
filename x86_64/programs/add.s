@@ -8,7 +8,7 @@ add:
 
 	cmpq $1,%rdi
 	jl exit
-	addq %rsi,%rax 
+	addq %rsi,%rax
 	
 	cmpq $2,%rdi
 	jl exit
