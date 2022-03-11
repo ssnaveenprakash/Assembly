@@ -26,6 +26,12 @@ add:
 	jl exit
 	addq %r9,%rax
 
+	movq $2,%rbx
+	movq $16, %rdx
+	xorq %rdx, %rdx
+	movq (%rbp,%rbx,8) , %rdx
+	addq %rdx, %rax
+
 	exit:
 	movq %rbp,%rsp
 	pop %rbp

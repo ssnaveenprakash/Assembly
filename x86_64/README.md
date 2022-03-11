@@ -47,6 +47,7 @@ Operands for a CPU instruction can be in a **Register**,**Memory** or **Immediat
 * **Register Indirect Addressing** - effective address of the data is stored in a register and then the data is accessed by dereferencing the effective address  
 * **Scale, Index, Base, Displacement Addressing** - we can use a combination of scale, index, base, and displacement to compute an address and then fetch data from that address
   - [base] + [index × scale] + disp32
+  - disp(base, index, scale) - AT & T Syntax
 * **Implied Addressing** - some instructions will assume the operand without explicitly mentioning them in the instruction, _inc and dec_ will assume to add one or decrease by one
 
 ### Endianess
