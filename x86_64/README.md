@@ -175,4 +175,11 @@ And, finally, the signed ones:
 ### Does pointer points to LSB or MSB of a data object? 
 
 * Let's take an integer of four bytes **0x0A0B0C0D**. 
-* If a pointer is pointing to 
+* Depending on whether the CPU architecture is **Little Endian** or **Big Endian** the order of the bytes stored can change.
+* But irrespective of the whether the machine is **Little Endian** or **Big Endian** we have to figure out whether the pointer points to the LSB or MSG.
+* So there are four possibilities. 
+ * Little Endian - but pointer points to MSB
+ * Big Endian - but pointer points to LSB 
+ * Little Endian - pointer points to LSB 
+ * Big Endian - pointer points to MSB
+* pointer always points to lower memory address? we have to figure it out
