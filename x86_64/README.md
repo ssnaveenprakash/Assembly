@@ -169,3 +169,10 @@ And, finally, the signed ones:
 | JNG    | Jump if not greater          |             |                    |
 | JG/    | Jump if greater              | signed      | ZF = 0 and SF = OF |
 | JNLE   | Jump if not less or equal    |             |                    |
+
+
+
+### Does pointer points to LSB or MSB of a data object? 
+
+* Let's take an integer of four bytes **0x0A0B0C0D**. 
+* If a pointer is pointing to 
