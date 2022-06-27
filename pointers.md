@@ -8,4 +8,4 @@
 * Pointer arithmetic 
 * Pointer and arrays 
 * Pointer and structs 
-
+* Arrays as function parameters
