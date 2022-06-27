@@ -1,6 +1,7 @@
 # Pointers in c 
 
 * stores the address of another variable 
+* **deferencing** reading the value of pointer or writing the value to the pointer 
 
 ## Concepts to learn 
 * Pointer to another pointer 
