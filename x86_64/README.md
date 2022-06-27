@@ -184,3 +184,6 @@ And, finally, the signed ones:
   * Big Endian - pointer points to MSB
 * pointer always points to lower memory address? we have to figure it out
   * Atleast in c , it seems pointer points to the Lowest address irrespective of whether the machine is Little Endian or Big Endian.
+
+### Does Endianess affect how array memebers are stored in memory? 
+* Endianess applys to data object or it effects the order in which array elements are stored
