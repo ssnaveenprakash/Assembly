@@ -183,4 +183,4 @@ And, finally, the signed ones:
   * Little Endian - pointer points to LSB 
   * Big Endian - pointer points to MSB
 * pointer always points to lower memory address? we have to figure it out
-  * Atleast in c , it seems pointer points to the Lowest address.
+  * Atleast in c , it seems pointer points to the Lowest address irrespective of whether the machine is Little Endian or Big Endian.
