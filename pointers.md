@@ -9,3 +9,7 @@
 * Pointer and arrays 
 * Pointer and structs 
 * Arrays as function parameters
+
+
+### Arrays as function paramters 
+* Arrays are always passed by pointer not by value
