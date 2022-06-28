@@ -7,6 +7,7 @@
 * Pointer to another pointer 
 * Pointer arithmetic 
 * Pointer and arrays 
+  * Pointers and Multi Dimensional Arrays
 * Pointer and structs 
 * Arrays as function parameters
 
